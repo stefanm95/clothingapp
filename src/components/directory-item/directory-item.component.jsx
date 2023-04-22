@@ -1,4 +1,4 @@
-import {DirectoryItemContainer,Body,BackgroundImage} from './directory-item.styles.jsx';
+import { DirectoryItemContainer, Body, BackgroundImage } from './directory-item.styles.jsx';
 
 const DirectoryItem = ({ category }) => {
   const { imageUrl, title } = category;
