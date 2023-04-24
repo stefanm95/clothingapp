@@ -17,7 +17,7 @@ const defaultFormFields = {
 
 const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const {  email, password } = formFields;
+  const { email, password } = formFields;
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -74,8 +74,8 @@ const SignInForm = () => {
           value={password}
         />
         <ButtonsContainer>
-        <Button type='submit'>Sign in</Button>
-        <Button type='button' buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>Google sign in</Button>   
+          <Button type='submit'>Sign in</Button>
+          <Button type='button' buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>Google sign in</Button>   
         </ButtonsContainer>
       </form>
     </SignInContainer>
