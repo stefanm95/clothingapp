@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BaseButton = styled.button`
-min-width: 165px;
+    min-width: 165px;
     width: auto;
     height: 50px;
     letter-spacing: 0.5px;
@@ -26,7 +26,7 @@ min-width: 165px;
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
-background-color: #4285f4;
+      background-color: #4285f4;
       color: white;
   
       &:hover {
@@ -36,7 +36,7 @@ background-color: #4285f4;
 `;
 
 export const InvertedButton = styled(BaseButton)`
-background-color: white;
+      background-color: white;
       color: black;
       border: 1px solid black;
   

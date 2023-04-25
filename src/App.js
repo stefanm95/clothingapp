@@ -22,7 +22,7 @@ const App = () => {
     const unsubscribe = onAuthStateChangedListener((user) => {
      if(user){
          createUserDocumentFromAuth(user);
-        }
+      };
         dispatch(setCurrentUser(user));
     });
 

@@ -18,21 +18,19 @@ const CartDropdown = () => {
     const navigate = useNavigate();
     const goToCheckOutHandler = () => {
         navigate('./checkout')
-    }
+    };
     return (
     <CartDropdownContainer>
       <CartItems>
         {cartItems.length ? (
-          cartItems.map((cartItem) => (
-            <CartItem key={cartItem.id} cartItem={cartItem} />
-          ))
+          cartItems.map((item) => <CartItem key={item.id} cartItem={item} />)
         ) : (
-          <EmptyMessage as='span'>Your cart is empty</EmptyMessage>
+          <EmptyMessage>Your cart is empty</EmptyMessage>
         )}
       </CartItems>
       <Button onClick={goToCheckOutHandler}>GO TO CHECKOUT</Button>
     </CartDropdownContainer>
-    )
+  );
 };
 
 export default CartDropdown;
