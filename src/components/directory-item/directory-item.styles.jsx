@@ -9,7 +9,7 @@ export const BackgroundImage = styled.div`
 `;
 
 export const Body = styled.div`
-    height: 100% 5.6em;
+    height: 5.6em;
     padding: 0 0.7em;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ export const Body = styled.div`
 export const DirectoryItemContainer = styled.div`
     /* display:inline-block; */
     min-width: 30%;
-    height: 15em;
+    height: 21em;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
