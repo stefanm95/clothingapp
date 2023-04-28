@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const BaseButton = styled.button`
-    min-width: 165px;
-    width: auto;
-    height: 50px;
-    letter-spacing: 0.5px;
-    line-height: 50px;
-    padding: 0 35px 0 35px;
-    font-size: 15px;
+    display:inline-block;
     background-color: black;
-    color: white;
+    letter-spacing: 0.5;
+    padding: 0.35em 1.2em;
+    border:none;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Open Sans Condensed';
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bolder;
-    border: none;
+    font-weight:300;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -22,6 +25,12 @@ export const BaseButton = styled.button`
       background-color: white;
       color: black;
       border: 1px solid black;
+    }
+    @media all and (max-width:30em){
+      &:button{
+        display: block;
+        margin:0.4em auto;
+      }
     }
 `;
 

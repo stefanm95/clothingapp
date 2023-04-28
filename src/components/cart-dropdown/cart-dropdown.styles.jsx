@@ -8,7 +8,7 @@ import {
 
 
 export const CartDropdownContainer = styled.div`
-position: absolute;
+    position: absolute;
     width: 240px;
     height: 340px;
     display: flex;
