@@ -9,40 +9,49 @@ export const BackgroundImage = styled.div`
 `;
 
 export const Body = styled.div`
-    height: 90px;
-    padding: 0 25px;
+    height: 100% 5.6em;
+    padding: 0 0.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 0.06em solid black;
     background-color: white;
     opacity: 0.7;
     position: absolute;
 
     h2 {
       font-weight: bold;
-      margin: 0 6px 0;
-      font-size: 22px;
+      margin: 0 0.4em 0;
+      font-size: 1.4em;
       color: #4a4a4a;
       text-transform: uppercase;
     }
 
     p {
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 1em;
+    }
+    @media all and (max-width:30em){
+      h2{
+        display:block;
+      }
+      p{
+        display:block;
+      }
     }
 `;
 
 export const DirectoryItemContainer = styled.div`
+    /* display:inline-block; */
     min-width: 30%;
-    height: 240px;
+    height: 15em;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    margin: 0 7.5px 15px;
+    border: 0.06em solid black;
+    margin: 0 0.5em 0.9em;
     overflow: hidden;
 
     &:hover {
@@ -51,16 +60,16 @@ export const DirectoryItemContainer = styled.div`
       & ${BackgroundImage} {
         transform: scale(1.1);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-      }
+    }
 
     & .${Body} {
         opacity: 0.9;
     }
     &:first-child {
-      margin-right: 7.5px;
+      margin-right: 0.5em;
     }
     &:last-child {
-     margin-left: 7.5px;
+     margin-left: 0.5em;
     }
   }
 `;
