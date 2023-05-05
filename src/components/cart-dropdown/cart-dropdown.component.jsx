@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 
 import Button from '../button/button.component';
 import CartItem from '../cart-item/cart-item.component';
@@ -20,20 +20,20 @@ const CartDropdown = () => {
     const cartItems = useSelector(selectCartItems);
     const navigate = useNavigate();
     const toggleIsCartOpen = () => dispatch(setIsCartOpen(!selectIsCartOpen))
-    const cartDropdownRef = useRef(null);
+  //   const cartDropdownRef = useRef(null);
   
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-        if(cartDropdownRef.current && !cartDropdownRef.current.contains(event.target)){
-            toggleIsCartOpen(true);
-        };
-    };
-    document.addEventListener('click', handleOutsideClick);
+  // useEffect(() => {
+  //   const handleOutsideClick = (event) => {
+  //       if(cartDropdownRef.current && !cartDropdownRef.current.contains(event.target)){
+  //           toggleIsCartOpen(true);
+  //       };
+  //   };
+  //   document.addEventListener('click', handleOutsideClick);
 
-    return () => {
-        document.removeEventListener('click', handleOutsideClick);
-    }
-  }, [])
+  //   return () => {
+  //       document.removeEventListener('click', handleOutsideClick);
+  //   }
+  // }, [])
 
     const goToCheckOutHandler = () => {
         navigate('./checkout')
